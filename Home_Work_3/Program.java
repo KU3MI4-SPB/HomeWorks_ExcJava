@@ -29,12 +29,12 @@ public class Program {
 
 
         System.out.println(data);
-        String folderPath = "Home_Work_3/data"; // Имя вашей подпапки
+        String folderPath = "Home_Work_3/data";
         File folder = new File(folderPath);
         if (!folder.exists()) {
-        folder.mkdirs(); // Создание подпапки, если она не существует
+        folder.mkdirs();
         }
-        String filePath = folderPath + File.separator + newFileName; // Создание пути к файлу в подпапке
+        String filePath = folderPath + File.separator + newFileName;
         System.out.println(filePath);
         try (FileWriter writer = new FileWriter(filePath)) {
          writer.write(sb.toString());
