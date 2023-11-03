@@ -5,7 +5,7 @@ public class InputData {
     public String[] enterData() {
         Scanner iScanner = new Scanner(System.in);
         while (true){
-            System.out.println("Введите данные пользователя в формате Ф.И.О, дата рождения, номер телефона цифрами, пол - f/m \nПример: Kuznetsov Aleksandr Vyacheslavovich 22.04.1980 79991234567 f");
+            System.out.println("Введите данные пользователя в формате Ф.И.О, дата рождения, номер телефона цифрами, пол - f/m \nПример: Kuznetsov Aleksandr Vyacheslavovich 22.04.1980 79991234567 m");
             String data = iScanner.nextLine();
             String[] arrayData = data.split(" ");
             if (arrayData.length == 6) {
